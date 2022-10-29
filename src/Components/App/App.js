@@ -2,12 +2,13 @@ import React from 'react';
 import { AuthContext } from '../../providers/auth';
 
 const App = () => {
-  const { user } = React.useContext(AuthContext)
+  const { user, setUser } = React.useContext(AuthContext)
   console.log(user)
 
   return (
   <>
-    <div style={{ color: user.color }}>Olá mundo</div>
+    <div>Olá mundo</div>
+    <input type="text" onChange={(e) => setUser({ name: e.target.value })} />
   </>
   )
 }
