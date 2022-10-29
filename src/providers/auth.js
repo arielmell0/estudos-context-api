@@ -4,7 +4,8 @@ export const AuthContext = React.createContext({})
 
 export const AuthProvider = (props) => {
     const user = {
-        name: 'Ariel'
+        name: 'Ariel',
+        color: 'red'
     }
 
     return (

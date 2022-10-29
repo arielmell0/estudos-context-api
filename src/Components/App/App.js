@@ -7,7 +7,7 @@ const App = () => {
 
   return (
   <>
-    <div>Olá mundo</div>
+    <div style={{ color: user.color }}>Olá mundo</div>
   </>
   )
 }
