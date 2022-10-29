@@ -1,5 +1,6 @@
 import React from 'react';
 import { useAuth } from '../../providers/auth';
+import Login from '../Login';
 import Profile from '../Profile';
 
 const App = () => {
@@ -11,6 +12,7 @@ const App = () => {
     <div>Olá mundo</div>
     <input type="text" onChange={(e) => setUser({ name: e.target.value })} />
     <Profile />
+    <Login />
   </>
   )
 }
