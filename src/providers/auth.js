@@ -13,3 +13,6 @@ export const AuthProvider = (props) => {
         </AuthContext.Provider>
     )
 }
+
+// hook customizado
+export const useAuth = () => React.useContext(AuthContext)

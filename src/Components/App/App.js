@@ -1,9 +1,9 @@
 import React from 'react';
-import { AuthContext } from '../../providers/auth';
+import { useAuth } from '../../providers/auth';
 import Profile from '../Profile';
 
 const App = () => {
-  const { user, setUser } = React.useContext(AuthContext)
+  const { user, setUser } = useAuth()
   console.log(user)
 
   return (

@@ -1,8 +1,7 @@
-import { useContext } from "react"
-import { AuthContext } from "../../providers/auth"
+import { useAuth } from "../../providers/auth"
 
 const Profile = () => {
-    const { user } = useContext(AuthContext)
+    const { user } = useAuth()
 
     return (
         <div>
